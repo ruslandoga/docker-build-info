@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - id: meta
-        uses: docker/metadata-action@v4
+        uses: crazy-max/docker-metadata-action@env-output
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           # https://github.com/docker/metadata-action/issues/227

@@ -44,4 +44,4 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           build-args: |
-            BUILD_INFO=${{ steps.meta.outputs.json }}
+            "BUILD_INFO=${{ steps.meta.outputs.json }}"
